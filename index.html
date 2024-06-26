@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(58, 4, 48);
+            color: rgb(211, 212, 213);
+            font-family: sans-serif;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(13, 13, 61);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(76, 76, 172);
+            font-size: 1.2rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+
+        }
+
+        .left {
+            font-size: 1.7rem;
+            font-family: fantasy;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 135px 0;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 70px 0;
+        }
+
+        .rightsection {
+            background-color: transparent;
+
+        }
+
+        .rightsection img {
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: white(20, 10, 15);
+        }
+
+        #element {
+            color: white(211, 210, 211);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 79vw;
+            height: 2px;
+            margin: 51px -5px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-start;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            height: 251px;
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer .ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            justify-content: space-evenly;
+            display: flex;
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .footer-second p {
+            font-size: 30px;
+            font-weight: 700;
+            color: #ececef;
+        }
+
+        .footer-second UL {
+            list-style: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul a {
+            display: block;
+            font-size: 16px;
+            margin-top: 13px;
+            list-style: none;
+        }
+
+        .footer-second .sub-msg2 {
+            font-size: 10px;
+            font-weight: lighter;
+        }
+
+        .footer-third ul {
+            display: block;
+            font-size: 16px;
+            margin-top: 13px;
+            list-style: none;
+        }
+
+        .icon {
+            margin-top: 17px;
+            color: #e3e2ed;
+            font-size: 20px;
+        }
+
+        .icon i {
+            margin-right: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Rafeya's portfoloio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a>
+                    <li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Rafeya</span>
+                <div>and i am a enthusiastic</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+            </div>
+            <div class="rightsection">
+                <img src="software-development.png">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray"> what i have done so far</span>
+            <h1>
+                Work Experience
+            </h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="logo_html.png" alt="">
+                    <div class="vertical-title">
+                        HTML devloper (2020-2021)
+                    </div>
+                    <div class="vertical-desc">
+                        As an HTML Developer, I specialize in creating and maintaining high-quality, responsive web
+                        pages using HTML5, CSS3, and basic JavaScript. I collaborate closely with designers and back-end
+                        developers to bring web designs to life, ensuring cross-browser compatibility and optimal user
+                        experience. With a keen eye for detail and a passion for web development, I strive to deliver
+                        visually appealing and user-friendly websites.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css logo.png" alt="">
+                    <div class="vertical-title">
+                        Node.js devloper (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a proficient Node.js Developer with a strong background in building scalable and efficient
+                        server-side applications. My expertise includes developing RESTful APIs, managing databases, and
+                        integrating various web services. I excel in JavaScript, Express.js, and working with both SQL
+                        and NoSQL databases. With a passion for problem-solving and optimizing performance, I thrive in
+                        collaborative environments and stay updated with the latest industry trends to deliver
+                        high-quality solutions.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js logo.png" alt="">
+                    <div class="vertical-title">
+                        React.js devloper (2021-2023)
+                    </div>
+                    <div class="vertical-desc">
+                        As a skilled React.js Developer, I specialize in building dynamic and responsive web
+                        applications. With a strong proficiency in React.js, JavaScript, and modern front-end
+                        development techniques, I create user-friendly interfaces and optimize performance. My
+                        experience includes collaborating with designers and back-end developers to deliver seamless and
+                        scalable solutions. I am passionate about staying updated with the latest industry trends and
+                        continuously improving my skills to build innovative web applications.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="canvas logo.png" alt="">
+                    <div class="vertical-title">
+                        MangoDB devloper (2022-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I am an experienced MongoDB Developer specializing in designing, developing, and optimizing
+                        NoSQL database solutions. My portfolio showcases various projects where I have implemented
+                        efficient data models, written complex queries, and ensured optimal performance and data
+                        integrity. With a strong background in database management and a keen eye for detail, I am adept
+                        at solving complex data challenges and delivering robust solutions. Explore my work to see how I
+                        leverage MongoDB to drive innovation and efficiency in application development.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="canvas logo.png" alt="">
+                    <div class="vertical-title">
+                        python devloper (2022-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I am a proficient Python Developer with experience in building robust, scalable applications and
+                        automating workflows. My portfolio showcases a diverse range of projects, including web
+                        applications, data analysis, machine learning models, and automation scripts. With a strong
+                        foundation in Python frameworks like Django and Flask, as well as libraries such as Pandas,
+                        NumPy, and Scikit-learn, I deliver efficient and innovative solutions. Explore my projects to
+                        see how I leverage Python to solve complex problems and drive business success.
+
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="js logo.png" alt="">
+                    <div class="vertical-title">
+                        java devloper (2023-2024)
+                    </div>
+                    <div class="vertical-desc">
+                        I am an experienced Java Developer with a strong background in building robust, scalable
+                        applications. Proficient in Java, Spring Framework, and Hibernate, I specialize in creating
+                        efficient backend systems and APIs. My expertise includes developing and maintaining web
+                        applications, working with relational databases, and implementing best coding practices. With a
+                        keen eye for detail and a commitment to delivering high-quality software, I am dedicated to
+                        continuously improving my skills and staying updated with the latest industry trends. Check out
+                        my portfolio to see examples of my work and projects.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rafeya's devloper portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <p><i class="fa-solid fa-devloper"></i>Contact</p>
+                    <p class="sub-msg2">
+                        <a>7/63 Alpha Tower</a>
+                        <a>0032 8476 4832</a>
+                        <a>www.grobmanconsulting.com</a>
+
+                    </p>
+                    <div class="icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Contact</li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-rights">
+            Copyright &#169;2024 rafeyasportfolio.com | All rights reserved
+
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web devloper', 'Graphic Designer', 'video editor'],
+            typeSpeed: 50,
+        });
+    </script>.
+</body>
+
+</html>
